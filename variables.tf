@@ -9,6 +9,6 @@ variable "location"{
 }
 variable "storage"{
     type = string
-    default = "storagesecondresourcegroup"
+    default = "storagesecondresourceg"
 }
 
