@@ -1,6 +1,6 @@
 variable "rg_name"{
     type = string
-    default = "sec-rg"
+    default = "third-rg"
 }
 
 variable "location"{
@@ -9,6 +9,6 @@ variable "location"{
 }
 variable "storage"{
     type = string
-    default = "storagesecondresourceg"
+    default = "storagethirdresourceg"
 }
 
