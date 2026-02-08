@@ -15,5 +15,6 @@ resource "azurerm_storage_account" "secondstorage"{
 }
 
 module "acr" {
-  source = "./modules/container_registry/main.tf"
+  source = "./modules/container_registry"
+  name = "firstdocker"
 }
