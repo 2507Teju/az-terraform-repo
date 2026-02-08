@@ -15,5 +15,5 @@ resource "azurerm_storage_account" "secondstorage"{
 }
 
 module "acr" {
-  source = "./modules/main.tf"
+  source = "./modules/container_registry/main.tf"
 }
