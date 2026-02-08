@@ -15,5 +15,5 @@ resource "azurerm_storage_account" "secondstorage"{
 }
 
 module "acr_shared" {
-  source = "modules/main.tf"
+  source = "./modules/main.tf"
 }
