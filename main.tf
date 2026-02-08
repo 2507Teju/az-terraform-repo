@@ -14,3 +14,7 @@ resource "azurerm_storage_account" "secondstorage"{
     }
 }
 
+module "acr" {
+  source = "./modules/container_registry"
+  name = "firstdocker"
+}
