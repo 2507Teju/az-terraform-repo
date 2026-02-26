@@ -14,3 +14,8 @@ resource "azurerm_storage_account" "secondstorage"{
     }
 }
 
+resource "azurerm_storage_container" "storage_container" {
+  name                  = "$web"
+  storage_account_id  = azurerm_storage_account.secondstorage.id
+  container_access_type = "blob"
+}
