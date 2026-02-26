@@ -16,6 +16,6 @@ resource "azurerm_storage_account" "secondstorage"{
 
 resource "azurerm_storage_container" "storage_container" {
   name                  = "$web"
-  storage_account_id  = azurerm_storage_account.secondstorage.id
+  storage_account_name  = azurerm_storage_account.secondstorage.name
   container_access_type = "blob"
 }
